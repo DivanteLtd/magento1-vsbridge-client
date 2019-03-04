@@ -1,0 +1,23 @@
+{
+  "name": "magento1-vsbridge-client",
+  "description": "Magento1 js client for VSBridge",
+  "version": "0.1.0",
+  "license": "MIT",
+  "deprecated": false,
+  "dependencies": {
+    "oauth-1.0a": "^1.0.1",
+    "request": "^2.72.0",
+    "winston": "^2.2.0"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "homepage": "https://github.com/DivanteLtd/magento1-vsbridge-client",
+  "keywords": [
+    "magento1",
+    "REST",
+    "VsBridge",
+    "API"
+  ],
+  "main": "index.js"
+}
