@@ -1,6 +1,7 @@
 const RestClient = require('./lib/rest_client').RestClient;
 const user = require('./lib/user');
 const cart = require('./lib/cart');
+const order = require('./lib/order');
 const stock = require('./lib/stock');
 const contact = require('./lib/contact');
 const wishlist = require('./lib/wishlist');
@@ -29,6 +30,7 @@ module.exports.Magento1Client = function (options) {
 
   instance.user = user(client);
   instance.cart = cart(client);
+  instance.order = order(client);
   instance.stock = stock(client);
   instance.contact = contact(client);
   instance.wishlist = wishlist(client);
