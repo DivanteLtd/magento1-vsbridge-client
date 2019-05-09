@@ -26,7 +26,7 @@ module.exports.Magento1Client = function (options) {
 
   options.version = MAGENTO_API_VERSION;
 
-  let client = RestClient(options);
+  const client = RestClient(options);
 
   instance.user = user(client);
   instance.cart = cart(client);
@@ -37,6 +37,7 @@ module.exports.Magento1Client = function (options) {
   instance.stockAlert = stockAlert(client);
   instance.newsletter = newsletter(client);
   instance.address = address(client);
-
+  instance.client = client
+  
   return instance;
 };
