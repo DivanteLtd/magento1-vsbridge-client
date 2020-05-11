@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "declaration": true,
+    "strict": false,
+    "allowJs": false,
+    "importHelpers": false,
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noLib": false,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "lib": ["es7"]
+  },
+  "include": [
+    "lib/**/*",
+    "index.ts"
+  ]
+}

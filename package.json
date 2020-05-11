@@ -4,6 +4,11 @@
   "version": "0.1.0",
   "license": "MIT",
   "deprecated": false,
+  "scripts": {
+    "build": "tsc --build",
+    "prepublishOnly": "npm run build",
+    "prebuild": "rimraf \"lib/*.{d.ts,js}\" \"index.{d.ts,js}\""
+  },
   "dependencies": {
     "oauth-1.0a": "^1.0.1",
     "request": "^2.72.0",
@@ -12,6 +17,12 @@
   "directories": {
     "lib": "./lib"
   },
+  "files": [
+    "lib/*.d.ts",
+    "index.d.ts",
+    "lib/*.js",
+    "index.js"
+  ],
   "homepage": "https://github.com/DivanteLtd/magento1-vsbridge-client",
   "keywords": [
     "magento1",
@@ -19,5 +30,11 @@
     "VsBridge",
     "API"
   ],
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/request": "^2.48.4",
+    "rimraf": "^3.0.2",
+    "typescript": "3.8.*"
+  }
 }
