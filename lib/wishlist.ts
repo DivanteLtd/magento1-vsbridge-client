@@ -1,4 +1,4 @@
-import { getResponse, RequestResponse } from "./helper";
+import { getResponse, RequestResponse, CustomerToken } from "./helper";
 import { RestClientInstance } from "./rest_client";
 
 interface PullCall {

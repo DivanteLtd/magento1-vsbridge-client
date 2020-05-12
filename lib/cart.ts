@@ -1,5 +1,5 @@
 import { RestClientInstance } from "./rest_client";
-import { getResponse, RequestResponse } from "./helper";
+import { getResponse, RequestResponse, CustomerToken } from "./helper";
 
 interface CreateCall {
   (customerToken: CustomerToken): Promise<RequestResponse>
