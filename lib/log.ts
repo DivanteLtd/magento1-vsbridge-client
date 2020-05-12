@@ -16,4 +16,4 @@ var logger = new winston.Logger({
 
 logger.info('Winston logging library initialized.');
 
-module.exports = logger;
+export default logger;

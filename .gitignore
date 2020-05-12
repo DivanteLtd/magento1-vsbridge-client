@@ -3,3 +3,6 @@
 /node_modules/
 
 /test/config.json
+
+*.js
+*.d.ts
