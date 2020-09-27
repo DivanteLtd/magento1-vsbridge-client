@@ -8,6 +8,7 @@ const wishlist = require('./lib/wishlist');
 const stockAlert = require('./lib/stock_alert');
 const newsletter = require('./lib/newsletter');
 const address = require('./lib/address');
+const settings = require('./lib/settings');
 
 const MAGENTO_API_VERSION = 'V1';
 
@@ -37,6 +38,7 @@ module.exports.Magento1Client = function (options) {
   instance.stockAlert = stockAlert(client);
   instance.newsletter = newsletter(client);
   instance.address = address(client);
+  instance.settings = settings(client);
 
   return instance;
 };
